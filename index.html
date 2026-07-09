@@ -23,6 +23,10 @@
       window.addEventListener("load", function () {
         if ("serviceWorker" in navigator) {
           navigator.serviceWorker.register("ServiceWorker.js");
+          var hadController = !!navigator.serviceWorker.controller;
+          navigator.serviceWorker.addEventListener("controllerchange", function () {
+            if (hadController && performance.now() < 30000) window.location.reload();
+          });
         }
       });
 
