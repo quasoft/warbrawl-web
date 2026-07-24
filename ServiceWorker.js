@@ -1,4 +1,4 @@
-const cacheName = "warbrawl-0.1.0-bf383a615b8e41f58820b89c0fe7bc50";
+const cacheName = "warbrawl-0.1.0-0af53f7f8baf4c788a29584a87cbcf8a";
 const contentToCache = [
     "index.html",
     "manifest.webmanifest",
