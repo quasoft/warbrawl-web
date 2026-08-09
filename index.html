@@ -64,13 +64,13 @@
       var loaderUrl = buildUrl + "/Web.loader.js";
       var config = {
         arguments: [],
-        dataUrl: buildUrl + "/Web.data",
-        frameworkUrl: buildUrl + "/Web.framework.js",
-        codeUrl: buildUrl + "/Web.wasm",
+        dataUrl: buildUrl + "/Web.data.unityweb",
+        frameworkUrl: buildUrl + "/Web.framework.js.unityweb",
+        codeUrl: buildUrl + "/Web.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
-        companyName: "DefaultCompany",
+        companyName: "WarBrawl",
         productName: "WarBrawl",
-        productVersion: "0.1.0",
+        productVersion: "0.1.1",
         showBanner: unityShowBanner,
         // errorHandler: function(err, url, line) {
         //    alert("error " + err + " occurred at line " + line);
@@ -109,7 +109,7 @@
           alert(message);
         });
       };
-      document.body.appendChild(script); 
+      document.body.appendChild(script);
     </script>
   </body>
 </html>
