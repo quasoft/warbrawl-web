@@ -1,12 +1,12 @@
-const cacheName = "warbrawl-0.2.0-f024cff068534460971ba5cc54d4700e";
+const cacheName = "warbrawl-0.2.1-21b494dca0bd4dd8b3d0c237c03487c7";
 const contentToCache = [
     "index.html",
     "manifest.webmanifest",
     "TemplateData/style.css",
-    "Build/Web.data.unityweb",
-    "Build/Web.framework.js.unityweb",
-    "Build/Web.loader.js",
-    "Build/Web.wasm.unityweb"
+    "Build/Web.data.unityweb?v=0.2.1-21b494dca0bd4dd8b3d0c237c03487c7",
+    "Build/Web.framework.js.unityweb?v=0.2.1-21b494dca0bd4dd8b3d0c237c03487c7",
+    "Build/Web.loader.js?v=0.2.1-21b494dca0bd4dd8b3d0c237c03487c7",
+    "Build/Web.wasm.unityweb?v=0.2.1-21b494dca0bd4dd8b3d0c237c03487c7"
 ];
 
 self.addEventListener('install', function (e) {
