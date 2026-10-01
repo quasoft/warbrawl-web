@@ -1,7 +1,11 @@
 <linker>
   <assembly fullname="Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="Quantum.BoatAudioView" preserve="all" />
+    <type fullname="Quantum.BoatView" preserve="all" />
+    <type fullname="Quantum.CloudRotator" preserve="all" />
     <type fullname="Quantum.WarBrawlAmbientCallsView" preserve="all" />
     <type fullname="Quantum.WarBrawlAmbientLoopView" preserve="all" />
+    <type fullname="Quantum.WarBrawlBoatAudio" preserve="all" />
     <type fullname="Quantum.WarBrawlInputPoller" preserve="all" />
     <type fullname="Quantum.WarBrawlLocalCharacterApplier" preserve="all" />
     <type fullname="Quantum.WarBrawlShoreAmbienceView" preserve="all" />
@@ -17,20 +21,77 @@
     <type fullname="Quantum.AssetObjectIdentifier" preserve="nothing" serialized="true" />
     <type fullname="Quantum.AssetRef" preserve="nothing" serialized="true" />
     <type fullname="Quantum.AssetRef`1" preserve="nothing" serialized="true" />
+    <type fullname="Quantum.ComponentPrototypeSet" preserve="nothing" serialized="true" />
     <type fullname="Quantum.MapStaticCollider3D" preserve="nothing" serialized="true" />
+    <type fullname="Quantum.Prototypes.PhysicsCallbacks3DPrototype" preserve="nothing" serialized="true" />
+    <type fullname="Quantum.Prototypes.PhysicsCollider3DPrototype" preserve="nothing" serialized="true" />
+    <type fullname="Quantum.Prototypes.Transform3DPrototype" preserve="nothing" serialized="true" />
     <type fullname="Quantum.StaticColliderData" preserve="nothing" serialized="true" />
+    <type fullname="Quantum.CallbackFlags" preserve="nothing" serialized="true" />
     <type fullname="Quantum.InstantReplaySettings" preserve="nothing" serialized="true" />
+    <type fullname="Quantum.Prototypes.PhysicsBodyInertiaMode" preserve="nothing" serialized="true" />
+    <type fullname="Quantum.QEnum32`1" preserve="nothing" serialized="true" />
+    <type fullname="Quantum.Shape2DConfig" preserve="nothing" serialized="true" />
+    <type fullname="Quantum.Shape3DConfig" preserve="nothing" serialized="true" />
+    <type fullname="Quantum.Shape3DConfig/CompoundShapeData3D" preserve="nothing" serialized="true" />
   </assembly>
   <assembly fullname="Quantum.Unity, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="Quantum.QPrototypeBoat" preserve="all" />
+    <type fullname="Quantum.QuantumEntityPrototype" preserve="all" />
+    <type fullname="Quantum.QuantumEntityView" preserve="all" />
     <type fullname="Quantum.QuantumMapData" preserve="all" />
     <type fullname="Quantum.QuantumRunnerLocalDebug" preserve="all" />
     <type fullname="Quantum.QuantumStaticBoxCollider3D" preserve="all" />
     <type fullname="Quantum.QuantumStaticMeshCollider3D" preserve="all" />
+    <type fullname="Quantum.QuantumStaticSphereCollider3D" preserve="all" />
     <type fullname="Quantum.QuantumStaticTerrainCollider3D" preserve="all" />
+    <type fullname="Quantum.QuantumEntityPrototype/InitialNavMeshTargetInfo" preserve="nothing" serialized="true" />
+    <type fullname="Quantum.QuantumEntityPrototype/NavMeshAvoidanceAgentInfo" preserve="nothing" serialized="true" />
+    <type fullname="Quantum.QuantumEntityPrototype/NavMeshPathfinderInfo" preserve="nothing" serialized="true" />
+    <type fullname="Quantum.QuantumEntityPrototype/NavMeshSpec" preserve="nothing" serialized="true" />
+    <type fullname="Quantum.QuantumEntityPrototype/NavMeshSteeringAgentInfo" preserve="nothing" serialized="true" />
+    <type fullname="Quantum.QuantumEntityPrototype/OverrideFP" preserve="nothing" serialized="true" />
+    <type fullname="Quantum.QuantumEntityPrototype/PhysicsBodyGeneric" preserve="nothing" serialized="true" />
+    <type fullname="Quantum.QuantumEntityPrototype/PhysicsColliderGeneric" preserve="nothing" serialized="true" />
+    <type fullname="Quantum.QuantumEntityPrototype/SourceShapeGenericSettings" preserve="nothing" serialized="true" />
+    <type fullname="Quantum.QuantumEntityPrototype/Transform2DVerticalInfo" preserve="nothing" serialized="true" />
+    <type fullname="Quantum.QuantumEntityView/EntityUnityEvent" preserve="nothing" serialized="true" />
     <type fullname="Quantum.QuantumMapDataBakeFlags" preserve="nothing" serialized="true" />
     <type fullname="Quantum.QuantumRunnerLocalDebug/DynamicAssetDBSettings" preserve="nothing" serialized="true" />
     <type fullname="Quantum.QuantumRunnerLocalDebug/DynamicAssetDBSettings/InitialDynamicAssetsRequestedUnityEvent" preserve="nothing" serialized="true" />
     <type fullname="Quantum.QuantumStaticColliderSettings" preserve="nothing" serialized="true" />
+  </assembly>
+  <assembly fullname="QuaSoft.MapEditor.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="QuaSoft.MapEditor.BoatProfile" preserve="all" />
+    <type fullname="QuaSoft.MapEditor.BoatWake" preserve="all" />
+    <type fullname="QuaSoft.MapEditor.Buoyancy" preserve="all" />
+    <type fullname="QuaSoft.MapEditor.ConstraintFootprint" preserve="all" />
+    <type fullname="QuaSoft.MapEditor.GeneratedLayerContainer" preserve="all" />
+    <type fullname="QuaSoft.MapEditor.GeneratedObject" preserve="all" />
+    <type fullname="QuaSoft.MapEditor.MapEditorPath" preserve="all" />
+    <type fullname="QuaSoft.MapEditor.MapEditorWorld" preserve="all" />
+    <type fullname="QuaSoft.MapEditor.OceanHorizon" preserve="all" />
+    <type fullname="QuaSoft.MapEditor.PackWaterConversion" preserve="all" />
+    <type fullname="QuaSoft.MapEditor.RiverBody" preserve="all" />
+    <type fullname="QuaSoft.MapEditor.RiverProfile" preserve="all" />
+    <type fullname="QuaSoft.MapEditor.UnderwaterView" preserve="all" />
+    <type fullname="QuaSoft.MapEditor.WaterBody" preserve="all" />
+    <type fullname="QuaSoft.MapEditor.WaterBodyMarker" preserve="all" />
+    <type fullname="QuaSoft.MapEditor.WaterEffectsSystem" preserve="all" />
+    <type fullname="QuaSoft.MapEditor.WaterExclusionVolume" preserve="all" />
+    <type fullname="QuaSoft.MapEditor.WaterPhysicsProfile" preserve="all" />
+    <type fullname="QuaSoft.MapEditor.WaterStyleProfile" preserve="all" />
+    <type fullname="QuaSoft.MapEditor.WaterSurface" preserve="all" />
+    <type fullname="QuaSoft.MapEditor.WorldRecipe" preserve="all" />
+    <type fullname="QuaSoft.MapEditor.WorldSettings" preserve="all" />
+    <type fullname="QuaSoft.MapEditor.CellId" preserve="nothing" serialized="true" />
+    <type fullname="QuaSoft.MapEditor.DirtyRegions" preserve="nothing" serialized="true" />
+    <type fullname="QuaSoft.MapEditor.GenerationCache" preserve="nothing" serialized="true" />
+    <type fullname="QuaSoft.MapEditor.GenerationCache/CellRecord" preserve="nothing" serialized="true" />
+    <type fullname="QuaSoft.MapEditor.GenerationLayer" preserve="nothing" serialized="true" />
+    <type fullname="QuaSoft.MapEditor.LayerId" preserve="nothing" serialized="true" />
+    <type fullname="QuaSoft.MapEditor.TileId" preserve="nothing" serialized="true" />
+    <type fullname="QuaSoft.MapEditor.WaveLayer" preserve="nothing" serialized="true" />
   </assembly>
   <assembly fullname="Unity.Addressables, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" preserve="all">
     <type fullname="UnityEngine.AddressableAssets.Addressables" preserve="all" />
@@ -52,12 +113,16 @@
     <type fullname="UnityEngine.Rendering.Universal.ColorAdjustments" preserve="all" />
     <type fullname="UnityEngine.Rendering.Universal.LiftGammaGain" preserve="all" />
     <type fullname="UnityEngine.Rendering.Universal.ShadowsMidtonesHighlights" preserve="all" />
+    <type fullname="UnityEngine.Rendering.Universal.Tonemapping" preserve="all" />
     <type fullname="UnityEngine.Rendering.Universal.UniversalAdditionalCameraData" preserve="all" />
     <type fullname="UnityEngine.Rendering.Universal.UniversalAdditionalLightData" preserve="all" />
     <type fullname="UnityEngine.Rendering.Universal.WhiteBalance" preserve="all" />
     <type fullname="UnityEngine.Rendering.Universal.BloomFilterModeParameter" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.Rendering.Universal.DownscaleParameter" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.Rendering.Universal.TemporalAA/Settings" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.Rendering.Universal.HDRACESPresetParameter" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.Rendering.Universal.NeutralRangeReductionModeParameter" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.Rendering.Universal.TonemappingModeParameter" preserve="nothing" serialized="true" />
   </assembly>
   <assembly fullname="Unity.ResourceManager, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" preserve="all">
     <type fullname="UnityEngine.ResourceManagement.ResourceProviders.AssetBundleProvider" preserve="all" />
@@ -65,7 +130,16 @@
     <type fullname="UnityEngine.ResourceManagement.ResourceProviders.InstanceProvider" preserve="all" />
     <type fullname="UnityEngine.ResourceManagement.ResourceProviders.SceneProvider" preserve="all" />
   </assembly>
+  <assembly fullname="Unity.Splines, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.Splines.SplineContainer" preserve="all" />
+    <type fullname="UnityEngine.Splines.BezierKnot" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.Splines.KnotLinkCollection" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.Splines.Spline" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.Splines.Spline/MetaData" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.Splines.SplineDataDictionary`1" preserve="nothing" serialized="true" />
+  </assembly>
   <assembly fullname="UnityEngine.AnimationModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.Animation" preserve="all" />
     <type fullname="UnityEngine.AnimationClip" preserve="all" />
     <type fullname="UnityEngine.Animator" preserve="all" />
     <type fullname="UnityEngine.RuntimeAnimatorController" preserve="all" />
@@ -73,12 +147,17 @@
   <assembly fullname="UnityEngine.AudioModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="UnityEngine.AudioClip" preserve="all" />
     <type fullname="UnityEngine.AudioListener" preserve="all" />
+    <type fullname="UnityEngine.AudioSource" preserve="all" />
   </assembly>
   <assembly fullname="UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="UnityEngine.Camera" preserve="all" />
+    <type fullname="UnityEngine.Cubemap" preserve="all" />
+    <type fullname="UnityEngine.FlareLayer" preserve="all" />
     <type fullname="UnityEngine.GameObject" preserve="all" />
     <type fullname="UnityEngine.Light" preserve="all" />
+    <type fullname="UnityEngine.LightingSettings" preserve="all" />
     <type fullname="UnityEngine.LightmapSettings" preserve="all" />
+    <type fullname="UnityEngine.LightProbes" preserve="all" />
     <type fullname="UnityEngine.LODGroup" preserve="all" />
     <type fullname="UnityEngine.Material" preserve="all" />
     <type fullname="UnityEngine.Mesh" preserve="all" />
@@ -102,6 +181,8 @@
   <assembly fullname="UnityEngine.PhysicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="UnityEngine.BoxCollider" preserve="all" />
     <type fullname="UnityEngine.MeshCollider" preserve="all" />
+    <type fullname="UnityEngine.Rigidbody" preserve="all" />
+    <type fullname="UnityEngine.SphereCollider" preserve="all" />
   </assembly>
   <assembly fullname="UnityEngine.TerrainModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="UnityEngine.Terrain" preserve="all" />
@@ -114,11 +195,19 @@
   <assembly fullname="Quantum.Deterministic">
     <type fullname="Photon.Deterministic.FP" preserve="nothing" serialized="true" />
     <type fullname="Photon.Deterministic.FPQuaternion" preserve="nothing" serialized="true" />
+    <type fullname="Photon.Deterministic.FPVector2" preserve="nothing" serialized="true" />
     <type fullname="Photon.Deterministic.FPVector3" preserve="nothing" serialized="true" />
+    <type fullname="Photon.Deterministic.NullableFP" preserve="nothing" serialized="true" />
   </assembly>
   <assembly fullname="Quantum.Simulation">
+    <type fullname="Quantum.Prototypes.BoatPrototype" preserve="nothing" serialized="true" />
     <type fullname="Quantum.RuntimeConfig" preserve="nothing" serialized="true" />
     <type fullname="Quantum.RuntimePlayer" preserve="nothing" serialized="true" />
     <type fullname="Quantum.SessionRunner/Arguments" preserve="nothing" serialized="true" />
+  </assembly>
+  <assembly fullname="Unity.Mathematics">
+    <type fullname="Unity.Mathematics.float3" preserve="nothing" serialized="true" />
+    <type fullname="Unity.Mathematics.float4" preserve="nothing" serialized="true" />
+    <type fullname="Unity.Mathematics.quaternion" preserve="nothing" serialized="true" />
   </assembly>
 </linker>
